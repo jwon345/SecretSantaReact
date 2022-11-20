@@ -68,9 +68,28 @@
     /*background-color: red;*/
     flex-grow: 2;
 }
+
+.name-padding-div-2
+{
+    /*background-color: red;*/
+    flex-grow: 1.8;
+}
 .parent-name-box
 {
     /*background-color: pink;*/
     display: flex;
     flex-direction: row;
 }
+
+.nameInput
+{
+  background-color: transparent;
+
+  height: 40px;
+  font-size: 30px;
+  border: 0px;
+  border-bottom: 2px solid white;
+  color:white;
+  width: 50%;
+}
+

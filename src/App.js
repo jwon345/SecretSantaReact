@@ -78,7 +78,8 @@ function App() {
       <button onClick={debugList}>Debug</button>
       <h1>Secret Santa Generator</h1>
       <div>name</div>
-      <input
+      <input className='nameInput'
+        placeholder='Add Name'
         onChange={(e) => fetchTempName(e.target.value)}
       ></input>
       <br></br>
@@ -100,7 +101,7 @@ function App() {
                     </div>
                     <div className='row2'></div>
                   </div>
-                <div className='name-padding-div'></div>
+                <div className='name-padding-div-2'></div>
               </div>
             </React.Fragment>
           )

@@ -1,0 +1,21 @@
+.card
+{
+    background-color: greenyellow;
+    flex-grow: 2;
+    min-width: 400px;
+    min-height: 100px;
+    border-top-left-radius: 100px;
+}
+
+.card-padding
+{
+    background-color: red;
+    flex-grow: 2;
+}
+
+.parent-div
+{
+    background-color: pink;
+    display: flex;
+    flex-direction: row;
+}

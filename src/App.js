@@ -1,6 +1,6 @@
 import './App.css';
 import React, {useState} from 'react';
-
+import NameCard from './card';
 function App() {
   //assinged is unused
   const [list, setlist] = useState([
@@ -56,7 +56,7 @@ function App() {
       let target = Math.floor(Math.random()*filteredTemp.length);
       console.log("index number:" + i + " Target:" + target);
       console.log(filteredTemp);
-      if (filteredTemp.length == 0)
+      if (filteredTemp.length === 0)
       {
         generateList();   //recursion to try again when theres a scenario where at the end of the list. everyone is assigned except where the target is not assigned and subject is the same person
         break;
@@ -90,10 +90,17 @@ function App() {
         .map((person, index) => {
           return(
             <React.Fragment>
-              <div className='box'>
-                <div>{person.name} is index {index}
-                  <button onClick={() => removeFromList(person.id)}>Remove</button>
-                </div>
+              <div className='parent-name-box'>
+                <div className='name-padding-div'></div>
+                  <div className='name-div'>
+                    <div className='row1'>
+                      <div className='item1'>{index + 1}</div>
+                      <div className='item2'>{person.name}</div>
+                      <button className='item3' onClick={() => removeFromList(person.id)}>Remove</button>
+                    </div>
+                    <div className='row2'></div>
+                  </div>
+                <div className='name-padding-div'></div>
               </div>
             </React.Fragment>
           )
@@ -107,6 +114,8 @@ function App() {
               <div>
                 {resultsString}
               </div>
+
+
             </React.Fragment>
           )
         }) 

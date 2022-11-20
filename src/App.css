@@ -1,31 +1,14 @@
 .App {
   text-align: center;
+  color:white;
+  background-color:#223763
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 @keyframes App-logo-spin {
@@ -42,10 +25,52 @@
   margin: 10px;
 }
 
-.box{
-  padding: 20px;
-  background-color: green;
-  border: 5px, solid, blue;
-  margin-left: 25%;
-  margin-right: 25%;
+.item1
+{
+  flex-grow: 1;
+  font-size: 30px;
+}
+.item2
+{
+  min-width: 100px;
+  flex-grow: 5;
+}
+.item3
+{
+  flex-grow: 1;
+}
+
+.row1
+{
+  display: flex;
+  flex-direction: col;
+}
+
+.row2
+{
+  background-color: #34a65F;
+  min-height: 2px;
+}
+
+.name-div
+{
+    /*background-color: greenyellow; */
+    flex-grow: 2;
+    min-width: 400px;
+    min-height: 50px;
+
+
+    padding-bottom: 5px;
+}
+
+.name-padding-div
+{
+    /*background-color: red;*/
+    flex-grow: 2;
+}
+.parent-name-box
+{
+    /*background-color: pink;*/
+    display: flex;
+    flex-direction: row;
 }

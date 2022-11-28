@@ -41,9 +41,7 @@ function App() {
   const generateList = () =>
   {
     setResultsString(resultsString => [""]);
-    let bigRef = list;
-    console.log(bigRef);
-    let tempList = bigRef;
+    let tempList = list;
 
     for (let i = 0; i < list.length; i++)
     {
